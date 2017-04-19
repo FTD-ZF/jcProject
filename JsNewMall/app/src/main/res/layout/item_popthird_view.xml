@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <LinearLayout
+        android:id="@+id/ln_popthirdlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_popthird_titlename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="sssss"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="10sp"
+            android:background="@drawable/activity_search_first_shape"
+            android:textColor="@color/dark_6" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

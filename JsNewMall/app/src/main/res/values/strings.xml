@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">牛魔网</string>
+    <string name="title_search_a">目的地/关键词</string>
+    <string name="home_content_a">去哪玩</string>
+    <string name="home_content_b">周边游</string>
+    <string name="home_content_c">出境游</string>
+    <string name="home_content_d">国内游</string>
+    <string name="home_content_e">定制游</string>
+    <string name="home_content_f">签证</string>
+    <string name="home_content_g">包车</string>
+    <string name="home_content_h">积分商城</string>
+    <string name="home_content_i">热门推荐</string>
+    <string name="home_content_j">精品线路推荐</string>
+    <string name="travel_content_a">周末游</string>
+    <string name="travel_content_b">热门目的地</string>
+    <string name="travel_content_c">热卖推荐</string>
+    <string name="travel_contnet_d">查询更多线路</string>
+    <string name="travel_content_e">定制线路</string>
+    <string name="travel_content_f">定制旅游</string>
+    <string name="travel_content_g">想要行程更灵活?独立成团欢乐旅行,找旅行定制师来搞定!</string>
+    <string name="travel_content_h">定制旅行</string>
+    <string name="travel_content_i">游玩日期/天数</string>
+    <string name="travel_content_j">特色玩法</string>
+    <string name="travel_content_k">出行方式</string>
+    <string name="travel_content_l">定制游</string>
+    <string name="travel_content_m">立即定制</string>
+    <string name="travel_content_n">填写需求</string>
+    <string name="travel_content_o">沟通设计行程</string>
+    <string name="travel_content_p">快乐出游</string>
+    <string name="travel_content_q">签约付款</string>
+    <string name="travel_content_r">定制案例</string>
+    <string name="travel_content_s">我要包车</string>
+    <string name="travel_content_t">包车</string>
+    <string name="travel_content_u">常州长城旅游客运公司是常州市车型品种全、车辆档次高、服务质量优、综合接待能力强的实力企业。现拥有各类中高档车辆近200辆，车型齐全。有小型19座、中型37-39座、大型49-53座、商务车等。</string>
+    <string name="travel_content_v">服务项目</string>
+    <string name="search_a">取消</string>
+    <string name="search_b">热门目的地</string>
+    <string name="search_c">历史记录</string>
+    <string name="search_d">清除</string>
+    <string name="search_e">目的地大全</string>
+    <string name="search_f">定制线路</string>
+    <string name="search_g">团期:</string>
+    <string name="search_h">￥</string>
+    <string name="search_i">起</string>
+    <string name="search_j">推荐排序</string>
+    <string name="search_k">游玩方式</string>
+    <string name="search_l">行程天数</string>
+    <string name="search_m">筛选</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string name="app_id">58ed776a</string>
+
+    <string name="ship_a">游轮</string>
+    <string name="ship_b">我要咨询</string>
+    <string name="hotel_a">酒店</string>
+    <string name="hotel_b">恐龙主题度假酒店是江苏景尚旅业集团旗下的主题酒店品牌，座落于江苏省常州市环球恐龙城景区，与中华恐龙园、恐龙谷温泉、恐龙城大剧场毗邻而居，是中国首家游憩型商业公园——迪诺水镇的重要组成部分，酒店集宴会、餐饮、主题客房、儿童娱乐、健身休闲等功能于一体，是中国首家游憩型恐龙主题度假酒店。酒店奇幻的艺术氛围和独特的温情服务，将为您带来全新的旅行度假体验。</string>
+    <string name="hotel_c">咨询客服</string>
+    <string name="hotel_d">酒店拥有288间客房，汇集六大主题（恐龙树屋、森林木屋、西部牛仔、绿野仙踪、陶尔迷城、海底世界），每一间都让您体验别样的风情；迪诺中餐厅、侏罗纪主题自助餐厅环境奇趣，餐饮丰富，带您体验与恐龙一起觅食的乐趣；嘻哈乐园，冒险岛剧场是孩子们的天堂，快来这里找恐龙家族一起游戏吧！您的侏罗纪之旅，即将开启……</string>
+
+    <string name="hotel_e">尚茶酒店位于常州龙城市中心关河东路88号，最具常州风采的红梅公园、天宁寺往东；在喧闹的都市中，独辟一隅。</string>
+    <string name="hotel_f">酒店旨在向世人传承台湾茶禅文化，一杯清茶、一本文书、一种台湾情怀，追寻文化传承与匠人精神，三五好友、闲暇约会，烹茶、煮茶、泡茶，享清闲雅致的生活。</string>
+    <string name="hotel_g">酒店拥有大型多功能会议厅，为各级商贸洽谈、研讨会、学术论坛等会议提供环境极佳的场所；酒店配备专用停车场，并为游客代办旅游服务。</string>
+    <string name="hotel_h">酒店依据自身特点，设有茶空间、lounge、当地美食等。在这里，你能享到奢华的现代生活品质，发现自我、传承文化，让生活从有品质走向有意义。</string>
+    <string name="hotel_i">酒店的5-11层提供145间匠心独具的茶主题客房和套房，舒居双床房、舒居大床房及亲子家庭套房三种房型；位于酒店十二楼的壹舒居茶空间设有禅堂，后期也会推出“台湾养生餐”系列，让宾客体验茶禅文化的同时，又能享用到精致的美食。</string>
+
+
+    <string name="ticket_a">门票</string>
+    <string name="ticket_b">浙西凉缘峡漂流</string>
+    <string name="ticket_c">天目湖</string>
+    <string name="ticket_d">灵山大佛</string>
+
+
+
+    <string name="smoothlistview_header_hint_normal">下拉刷新</string>
+    <string name="smoothlistview_header_hint_ready">松开刷新数据</string>
+    <string name="smoothlistview_header_hint_loading">正在加载...</string>
+    <string name="smoothlistview_header_last_time">上次更新时间：</string>
+    <string name="smoothlistview_footer_hint_normal">查看更多</string>
+    <string name="smoothlistview_footer_hint_ready">松开载入更多</string>
+
+
+    <string name="route_details_a">韩国首尔一地尊享五日半自助游，韩国首尔一地尊享五日半自助游</string>
+    <string name="route_details_b">线路详情</string>
+
+    <string name="pay_content_a">恭喜您，您的订单提交成功！</string>
+    <string name="pay_content_b">请保持手机畅通，稍后客户将会联系你， 并确认订单信息。</string>
+    <string name="pay_content_c">查看订单</string>
+    <string name="pay_content_d">返回首页</string>
+    <string name="pay_content_e">完善出游人信息</string>
+    <string name="pay_content_f">支付成功</string>
+    <string name="pay_content_g">出游日期:</string>
+    <string name="pay_content_h">出游人数:</string>
+    <string name="pay_content_i">总额:</string>
+    <string name="pay_content_j">联系人:</string>
+    <string name="pay_content_k">联系电话:</string>
+    <string name="pay_content_l">电子邮箱:</string>
+    <string name="pay_content_m">下单成功</string>
+    <string name="pay_content_n">下单失败，可能有以下问题:</string>
+    <string name="pay_content_o">该产品暂时不能下单，请稍后再试。</string>
+    <string name="pay_content_p">重新下单</string>
+    <string name="pay_content_q">电话咨询</string>
+    <string name="pay_content_r">下单失败</string>
+    <string name="order_content_a">填写订单</string>
+    <string name="order_content_b">联系人信息</string>
+    <string name="order_content_c">姓名</string>
+    <string name="order_content_d">电话</string>
+    <string name="order_content_e">邮箱</string>
+    <string name="order_content_f">请输入姓名</string>
+    <string name="order_content_g">请输入电话</string>
+    <string name="order_content_h">请输入邮箱</string>
+    <string name="order_content_i">选择优惠</string>
+    <string name="order_content_j">订单总金额</string>
+    <string name="order_content_k">提交订单</string>
+
+    <string name="order_content_l">订单支付</string>
+    <string name="order_content_m">需支付总金额:</string>
+    <string name="order_content_n">多次支付</string>
+    <string name="order_content_o">取消</string>
+    <string name="order_content_p">请输入每次支付金额</string>
+    <string name="order_content_q">确认支付</string>
+    <string name="order_content_r">微信支付</string>
+    <string name="order_content_s">支付宝支付</string>
+
+    <!--刷新-->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+
+
+    <string name="select_date_a">下一步</string>
+
+
+    <string name="about_a">景尚旅业集团股份有限公司，2002年从常州春秋旅行社创业起步，经过15年的努力，现有员工1500多名，已发展成为专注于“旅游+互联网产业”、“微度假产业”投资运营的综合性旅业集团，两大产业、四个事业部独立运营，相关互补。集团及下属子分公司荣获全国百强旅行社、江苏省首批五星级旅行社、江苏省十佳旅行社、中国旅行社互联网创新奖、中国最佳酒店设计奖、全国最佳亲子酒店、全国最佳主题酒店、江苏省首批智慧旅游示范基地和江苏省旅行社协会副会长单位等荣誉。</string>
+
+    <string name="et_changepwd_type">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+
+    <string name="ticket_a_a">景区位于杭州市西部，是目前华东地区最刺激的漂流之一，全段漂流落差约120米，全长约3公里，整个游程约一个半小时，有超过5米落差的徒降漂、2米的跳台漂、波浪漂。河谷蜿蜒，水流湍急，跌宕起伏，有惊而无险，两岸琼山峻岭，颠连云天，苍松翠柏，野草山花，美景目不暇接，一船两人，游人自己驾驶，自己主宰自己，在波涛汹涌的激流中，想随波可随波，想逐流可逐流，尽量“弄潮儿”之英雄本色，即娱乐了身心，又锻炼了意志，极受游客偏爱。被誉为“呼啸的清凉”。</string>
+
+    <string name="ticket_a_b">天目湖位于溧阳市南八公里处，全区拥有300平方公里的生态保护区，区内座落着沙河、大溪两座国家级大型水库。从高空俯视，犹如少女脸上一双亮丽的眼睛，故名“天目湖”，被誉为“江南明珠”、“绿色仙景”。山青、水秀、茶香、鱼鲜、空气好构成天目湖旅游度假区“湖光山色风景独秀，碧水蓝天江南明珠”的幽雅意境，不仅使天目湖旅游度假区成为动植物生息繁衍的乐园，而且给游客以返朴归真的美妙感觉。</string>
+    <string name="ticket_a_c">灵山大佛比四川乐山大佛还要高17米，由1560块青铜壁板拼装焊接而成的，总用铜量达到了700多吨。在大佛的建造过程中，运用了现代高新科技，如先进的抗风、防震、避雷等措施，其中，避雷针就被巧妙的藏在大佛的发髻里。由于使用了特型铜壁板和先进的焊接技术，大佛的外型达到“天衣无缝”的程度。</string>
+    <string name="ticket_a_d">梵宫内部精雕细琢的东阳木雕、敦煌技师的手工壁画、光灿夺目的琉璃巨制、精致典雅的瓯塑浮雕壁画、技艺精湛的扬州漆器、恢宏大气的油画组图、古雅精丽的景泰蓝须弥灯、精美的景德镇青花斗彩缸。这些汇集众多文化遗产、众多艺术瑰宝的艺术珍品遍布灵山梵宫的各个区域，将优秀的传统文化演绎得淋漓尽致，令人目不暇接、回味无穷。</string>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+<com.example.host.jsnewmall.view.SwipeLayout
+    android:id="@+id/swipe_traveller_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/tv_delete_traveller"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/traveller_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/tv_traveller_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dark_6" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_traveller_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/dark_6" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_traveller_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/title_orange" />
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_traveller_pen"/>
+        
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/second_bgcolor"
+        android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+</com.example.host.jsnewmall.view.SwipeLayout>
+
+</RelativeLayout>

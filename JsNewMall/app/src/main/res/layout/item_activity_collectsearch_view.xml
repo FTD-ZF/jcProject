@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.example.host.jsnewmall.view.SwipeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/tv_delete_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#FF0000"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="取消收藏"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/collection_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/net_collection_imageview"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_collection_line_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_6"
+                    android:textSize="14sp"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/tv_collection_line_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title_orange"
+                    android:textSize="14sp"
+                    android:layout_alignParentBottom="true"/>
+
+
+            </RelativeLayout>
+            
+            
+        </LinearLayout>
+
+
+
+
+
+    </com.example.host.jsnewmall.view.SwipeLayout>
+
+
+
+</RelativeLayout>

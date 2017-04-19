@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/dark_6"
+        android:text="价格区间"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/activity_search_first_shape">
+
+            <EditText
+                android:id="@+id/et_pop_date_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:inputType="number"
+                android:hint="最低预算"
+                android:textColorHint="@color/dark_9"
+                android:gravity="center"
+                android:background="@null"
+                android:textColor="@color/dark_6"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/activity_search_first_shape">
+            <EditText
+                android:id="@+id/et_pop_date_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:paddingTop="8dp"
+                android:hint="最高预算"
+                android:textColorHint="@color/dark_9"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:background="@null"
+                android:inputType="number"
+                android:textColor="@color/dark_6"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

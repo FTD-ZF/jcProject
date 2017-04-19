@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/rl_free_title"
+        layout="@layout/fragment_dingz_titlebar"/>
+
+
+
+
+    <com.example.host.jsnewmall.view.RefreshScrollView.PullToRefreshLayout
+        android:layout_below="@id/rl_free_title"
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head" />
+
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.example.host.jsnewmall.view.RefreshScrollView.PullableScrollView
+            android:id="@+id/free_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/free_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp">
+                    </android.support.v4.view.ViewPager>
+                    <LinearLayout
+                        android:id="@+id/ad_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="-30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/fragment_home_sixth_content"></include>
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </com.example.host.jsnewmall.view.RefreshScrollView.PullableScrollView>
+        <include layout="@layout/load_more" />
+    </com.example.host.jsnewmall.view.RefreshScrollView.PullToRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln_free_traveller"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_orange"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_free_search_route"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text="查询更多线路"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_free_dingzhi"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text="定制线路"
+            android:textSize="16sp"
+            android:background="@color/second_bgcolor"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

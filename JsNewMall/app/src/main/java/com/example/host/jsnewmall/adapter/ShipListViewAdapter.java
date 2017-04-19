@@ -1,0 +1,101 @@
+package com.example.host.jsnewmall.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.ImageLoader;
+import com.uu1.nmw.R;
+import com.example.host.jsnewmall.model.HomeSixthInfo;
+import com.example.host.jsnewmall.utils.BitmapCache;
+import com.example.host.jsnewmall.view.XRoundNetImageView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by host on 2017/2/21.
+ */
+
+public class ShipListViewAdapter extends BaseAdapter {
+
+    private Context mContext;
+    private String[] arrTexta = new String[]{"亲子游", "文本标签", "文本标签","文本标签"};
+    private String[] arrTextb = new String[]{"文本标签", "文本标签", "文本标签","文本标签"};
+
+
+    private int[] arrImages = new int[]{R.mipmap.testpicture,R.mipmap.testpicture,R.mipmap.testpicture,R.mipmap.testpicture
+            ,R.mipmap.testpicture,R.mipmap.testpicture,R.mipmap.testpicture};
+    private List<HomeSixthInfo> pictures;
+
+    private RequestQueue queue;
+    private ImageLoader imageLoader;
+    public ShipListViewAdapter(Context context, RequestQueue queue){
+        this.mContext=context;
+        this.queue=queue;
+        imageLoader = new ImageLoader(queue, new BitmapCache());
+//        pictures = new ArrayList<>();
+//        for (int i=0;i<4;i++){
+//            HomeSixthInfo pt = new HomeSixthInfo(arrTexta[i], arrTextb[i],arrTextb[i],arrTextb[i],arrTextb[i],arrTextb[i],arrImages[i],arrTextg[i]);
+//            pictures.add(pt);
+//        }
+
+    }
+    @Override
+    public int getCount() {
+//        if (null != pictures){
+//            return  pictures.size();
+//        }else{
+//            return 0;
+//        }
+        return 4;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return pictures.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup viewGroup) {
+        Holder holder;
+        if (convertView == null) {
+            holder = new Holder();
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_activity_ship_view, null);
+
+            holder.networkImageView=(XRoundNetImageView) convertView.findViewById(R.id.item_list_round_view_ship);
+
+//            NetworkImageView imageView = new NetworkImageView(mContext);
+            holder.networkImageView.setScaleType(ImageView.ScaleType.FIT_XY);
+//            holder.networkImageView.setImageUrl(arrTextg[position], imageLoader);
+
+//            holder.networkImageView.setImageDrawable(arrTextg[position]);
+
+
+
+            convertView.setTag(holder);
+        } else {
+            holder = (Holder) convertView.getTag();
+        }
+
+
+
+
+        return convertView;
+    }
+    class Holder {
+
+        XRoundNetImageView networkImageView;
+
+
+    }
+}

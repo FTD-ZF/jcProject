@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uu1.nmw">
+
+
+    <!-- Required -->
+    <permission
+        android:name="com.uu1.nmw.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.uu1.nmw.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+
+
+    <!--这个权限用于允许程序在手机屏幕关闭后后台进程仍然运行-->
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <!-- 启动摄像头进行拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo_a"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--高德key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="1aa5714f26616eaac5ca3679b6d0ca0c" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+        <!-- 移动统计分析 -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="'58ed776a'" />
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="Android_Demo" />
+
+
+        <activity android:name="com.example.host.jsnewmall.activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.host.jsnewmall.activity.MainActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.example.host.jsnewmall.activity.TravelActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.DingzActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.BaoCheActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.SearchActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.example.host.jsnewmall.activity.SearchResultActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.ShipActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.HotelActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.TicketActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.RouteDetailsActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.PaySuccessActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.OrderSuccessActivity" />
+        <activity android:name="com.example.host.jsnewmall.activity.OrderFailActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.WriteOrderActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.PayActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.MessageActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.SelectDateActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.LoginActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.CouponActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.AllOrderActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.OrderDetailsActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.TravellerInfoActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.TravellerAddInfoActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.TravellerEditInfoActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.PerTravellerInfoActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.PointsActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.SetUpActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.ChangeUserInfoActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.ChangeSexActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.ChangeBirthActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.QianZhengActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.PersonSetUpActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.AboutActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.SuggestionActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.ChangePwdActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.RegistActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.FreeTravelActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.CollectListActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.CenterHistoryActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.LocationActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.RouteNaviActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.AroundshopActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.ArShopDetailsActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.AddCommentActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.CenterCommentActivity"/>
+        <activity android:name="com.example.host.jsnewmall.view.ImagePagerView.ImagePagerActivity"/>
+        <activity android:name="com.example.host.jsnewmall.activity.WCommentOrderActivity"/>
+
+
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <activity android:name="com.example.host.jsnewmall.receiver.TestActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.uu1.nmw" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+       <!-- <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>-->
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.uu1.nmw" />
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.uu1.nmw" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+
+
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.example.host.jsnewmall.receiver.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.uu1.nmw" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="ee99673858bb052e5f3ea27d" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+
+
+    </application>
+
+</manifest>

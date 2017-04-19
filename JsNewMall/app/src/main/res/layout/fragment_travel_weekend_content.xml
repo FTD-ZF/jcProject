@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+
+    <com.example.host.jsnewmall.view.RefreshScrollView.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include layout="@layout/refresh_head" />
+
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.example.host.jsnewmall.view.RefreshScrollView.PullableScrollView
+        android:id="@+id/week_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/fragment_banner"></include>
+
+            <include layout="@layout/fragment_travel_week_first"></include>
+            <include layout="@layout/fragment_travel_week_second"></include>
+            <include layout="@layout/fragment_travel_week_third"></include>
+            <include layout="@layout/fragment_home_sixth_content"></include>
+            <include layout="@layout/fragment_travel_footerview"></include>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </com.example.host.jsnewmall.view.RefreshScrollView.PullableScrollView>
+        <include layout="@layout/load_more" />
+    </com.example.host.jsnewmall.view.RefreshScrollView.PullToRefreshLayout>
+
+
+
+</LinearLayout>
